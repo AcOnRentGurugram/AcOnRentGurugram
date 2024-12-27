@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import photo from "../assets/frame1.png";
+import contactbg from "../assets/city-5439202_1280.jpg";
 
 const TermsAndConditions: React.FC = () => {
   const navigate = useNavigate();
@@ -143,18 +144,28 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        {/* CTA Section */}
-        <section className="bg-primary text-white text-center p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-bold mb-4">Have Questions?</h2>
-          <p className="text-lg mb-6">
-            If you need clarification on any terms, contact us for assistance.
-          </p>
-          <button
-            onClick={() => navigate(`/contact`)}
-            className="bg-white text-primary px-6 py-2 rounded-lg font-semibold transition-colors duration-300 hover:text-black"
-          >
-            Contact Support
-          </button>
+        <section
+          className="bg-primary text-white text-center p-6 rounded-lg shadow-md relative bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${contactbg})`,
+          }}
+        >
+          {/* Overlay for better text visibility */}
+          <div className="bg-black/50 absolute inset-0 rounded-lg"></div>
+
+          {/* Content */}
+          <div className="relative z-10">
+            <h2 className="text-3xl font-bold mb-4">Have Questions?</h2>
+            <p className="text-lg mb-6">
+              If you need clarification on any terms, contact us for assistance.
+            </p>
+            <button
+              onClick={() => navigate(`/contact`)}
+              className="bg-white text-primary px-6 py-2 rounded-lg font-semibold transition-colors duration-300 hover:text-black"
+            >
+              Contact Support
+            </button>
+          </div>
         </section>
       </div>
       <Footer />

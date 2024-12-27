@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import photo from "../assets/frame1.png";
+import contactbg from "../assets/city-5439202_1280.jpg";
 
 
 const PrivacyPolicy: React.FC = () => {
@@ -102,18 +103,29 @@ const PrivacyPolicy: React.FC = () => {
         </section>
 
         {/* Call-to-Action Section */}
-        <section className="bg-primary text-white text-center p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-bold mb-4">Stay Secure with Us</h2>
-          <p className="text-lg mb-6">
-            If you have questions about our Privacy Policy, feel free to contact
-            us.
-          </p>
-          <button
-            onClick={() => navigate(`/contact`)}
-            className="bg-white text-primary px-6 py-2 rounded-lg font-semibold transition-colors duration-300 hover:text-black"
-          >
-            Contact Us
-          </button>
+        <section
+          className="bg-primary text-white text-center p-6 rounded-lg shadow-md relative bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${contactbg})`,
+          }}
+        >
+          {/* Overlay for better text visibility */}
+          <div className="bg-black/50 absolute inset-0 rounded-lg"></div>
+
+          {/* Content */}
+          <div className="relative z-10">
+            <h2 className="text-3xl font-bold mb-4">Stay Secure with Us</h2>
+            <p className="text-lg mb-6">
+              If you have questions about our Privacy Policy, feel free to
+              contact us.
+            </p>
+            <button
+              onClick={() => navigate(`/contact`)}
+              className="bg-white text-primary px-6 py-2 rounded-lg font-semibold transition-colors duration-300 hover:text-black"
+            >
+              Contact Us
+            </button>
+          </div>
         </section>
       </div>
       <Footer />
