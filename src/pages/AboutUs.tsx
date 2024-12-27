@@ -83,14 +83,20 @@ const AboutUs: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <p className="text-lg text-black leading-relaxed">
-                With years of expertise, AC On Rent Gurugram offers reliable,
-                energy-efficient air conditioning solutions to businesses and
-                individuals. Our team ensures personalized service, timely
-                delivery, and unparalleled customer support.
+                AC On Rent Gurugram is your go-to destination for reliable and
+                energy-efficient air conditioner rental services in Gurugram. We
+                specialize in providing Window ACs and Split ACs with flexible
+                daily, monthly, and yearly rental plans tailored to suit your
+                needs. From homes and offices to events and restaurants, our
+                team ensures hassle-free delivery, quick installation, and 24/7
+                customer support.
               </p>
               <p className="text-lg text-black leading-relaxed mt-4">
-                We are committed to understanding your unique requirements and
-                delivering customized solutions that exceed expectations.
+                With years of experience, we are committed to delivering
+                high-quality cooling solutions that combine affordability and
+                efficiency. Trust AC On Rent Gurugram to keep you comfortable
+                all year round with our expertly maintained appliances and
+                customer-first approach.
               </p>
             </div>
             <img
