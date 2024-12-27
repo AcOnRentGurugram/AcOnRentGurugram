@@ -90,7 +90,7 @@ export const PricingSection = ({
                 </SelectContent>
               </Select>
               <p className="text-sm text-muted-foreground mt-2">
-                The longer you rent, the lesser you spend 
+                The longer you rent, the lesser you spend
               </p>
             </div>
 

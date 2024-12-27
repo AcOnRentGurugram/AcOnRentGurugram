@@ -71,7 +71,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                Sector 86 , Gurugram, Haryana
+                Sector 86, Gurugram, Haryana 122052
               </li>
             </ul>
           </div>
