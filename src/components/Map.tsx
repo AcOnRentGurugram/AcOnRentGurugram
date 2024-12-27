@@ -15,7 +15,7 @@ export const Map: React.FC = () => {
           style={{ border: 0 }}
           allowFullScreen={true}
           loading="lazy"
-          title="Google Maps Location"
+          title="Google Maps Location or"
         ></iframe>
       </div>
     </div>

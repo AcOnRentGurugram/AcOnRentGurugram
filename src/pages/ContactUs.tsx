@@ -153,7 +153,7 @@ const ContactUs: React.FC = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  Sector 86, Gurugram, Haryana 122052
+                  Sector 86 , Gurugram, Haryana 122052
                 </a>
               </li>
             </ul>
